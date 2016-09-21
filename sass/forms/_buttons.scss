@@ -1,0 +1,21 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	background: $color__background-button;
+	@include font-size(1.4);
+	line-height: 1;
+	padding: 1.5rem 3rem;
+	
+	&:hover, 
+	&:active,
+	&:focus {
+		outline: 0;
+
+	}
+}
+
+
+
+

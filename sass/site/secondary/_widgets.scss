@@ -1,0 +1,34 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+#secondary {
+	.widget {
+		@include font-size(1.6);
+		h2 {
+			@include font-size(1.8);
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		.recentcomments {
+			margin-bottom: 15px;
+		}
+		.tagcloud {
+			a {
+			
+			}
+		}
+		.widget_categories {
+			margin-bottom: 15px;
+		}
+	}
+	
+}

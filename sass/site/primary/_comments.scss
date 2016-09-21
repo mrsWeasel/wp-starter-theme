@@ -1,0 +1,59 @@
+#comments {
+	margin-top: 50px;
+	.comments-title, #reply-title {
+	@include font-size(1.6);
+	}
+	.comment-list {
+	list-style-type: none;
+	}
+	.comment {
+	margin-top: 20px;
+	padding: 25px;
+	}
+	.comment-author {
+		@include font-size(1.4);
+		margin-bottom: 15px;
+		img {
+			display: block;
+			float: left;
+			border-radius: 50%;
+			margin-right: 15px;
+		}
+		.fn {
+
+		}
+	}
+	
+	.comment-metadata {
+	@include font-size(1.4);
+	}
+	.bypostauthor {
+
+		.fn {
+			color: initial;
+		}
+		a {
+			color: initial;
+		}
+	}
+	.reply {
+		text-align: right;
+		@include font-size(1.4);
+	}
+}
+#respond {
+	margin: 50px 0;
+	#commentform {
+		label {
+		@include font-size(1.4);
+		display: block;
+		}
+	}
+}	
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}

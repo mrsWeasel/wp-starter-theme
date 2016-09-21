@@ -1,0 +1,37 @@
+#main-wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+	#page {
+		width: 100%;
+		position: relative;
+		transform: translateX(0);
+		transition: .5s ease all;
+	}
+	#page.open {
+		transform: translateX(17em); //fallback if vh not supported
+		transform: translateX(100vw);
+	}
+	@media screen and (min-width: 768px) {
+		#page.open {
+			transform: translateX(0);
+		}
+	}
+}
+
+#page-header {
+	position: relative;
+}
+
+// logo container
+.site-branding {
+
+	#home-link {
+		display: inline-block;
+
+	}
+}
+
+#masthead {
+	padding: 1em 0;
+}

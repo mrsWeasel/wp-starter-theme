@@ -1,0 +1,30 @@
+a {
+	color: $color__link;
+	text-decoration: underline;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+		text-decoration: none;
+	}
+	&:focus {
+		outline: dotted 1px;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.content-menu {
+	ul {
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+		li {
+		margin-left: 0;
+		padding-left: 0;
+		}
+	}
+}
