@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Tuomas
+ * @package Sassyscores
  */
 /*
  * If the current post is protected by a password and

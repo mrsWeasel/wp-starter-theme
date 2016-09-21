@@ -3,7 +3,7 @@
  * Modify tag cloud sizes
  *
  *
- * @package Tuomas
+ * @package Sassyscores
  */
 
 add_filter( 'widget_tag_cloud_args', 'tk_tag_cloud_widget');

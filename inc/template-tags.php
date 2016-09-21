@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Tuomas
+ * @package Sassyscores
  */
 
 if ( ! function_exists( 'sassyscores_posted_on' ) ) :

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Tuomas
+ * @package Sassyscores
  */
 
 if ( ! function_exists( 'sassyscores_setup' ) ) :
