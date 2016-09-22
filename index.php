@@ -30,6 +30,7 @@ get_header(); ?>
 
 						endwhile; // End of the loop.
 						?>
+					<?php sassyscores_paginate_posts(); ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->
 			<?php get_sidebar(); ?>
