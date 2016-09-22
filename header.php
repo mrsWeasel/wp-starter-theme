@@ -28,15 +28,15 @@
 		<header id="masthead" class="site-header" role="banner">
 					<div class="container">
 						<div class="row site-branding-container">
-							<div class="site-branding col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-9 col-xs-offset-3">
+							<div class="site-branding col-sm-4 col-xs-12">
 								<a id="home-link" href="<?php echo home_url(); ?>">
 									<?php echo bloginfo('name');?>
 								</a>
 							</div><!-- .site-branding -->
-							<div class="nav-container col-md-9 col-sm-8 col-xs-12">
+							<div class="nav-container col-sm-8 col-xs-12">
 								<nav id="site-navigation" class="main-navigation" role="navigation">
-									<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => '' ) ); ?>
 									<button id="menu-button" class="menu-toggle" aria-controls="site-navigation" aria-expanded="false">Menu</button>
+									<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => '' ) ); ?>
 								</nav><!-- #site-navigation -->
 							</div>	
 						</div><!-- .row -->	
