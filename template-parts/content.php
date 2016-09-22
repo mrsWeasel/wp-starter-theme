@@ -16,7 +16,7 @@
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="row">
 			<div class="col-xs-12">
-			<div class="tag-container"><?php the_tags('', ' ', ''); ?></div>
+			<?php sassyscores_posted_on() ?>
 			</div>
 		</div> <!-- .row -->	
 		<?php
@@ -41,6 +41,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<!--<?php sassyscores_entry_footer(); ?>-->
+		<?php sassyscores_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
