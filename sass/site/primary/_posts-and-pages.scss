@@ -39,32 +39,10 @@ iframe {
 }
 
 .entry-meta {
-	@include font-size(1.3);
+	
 }
 
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
-}
 
-ul.page-numbers {
-	list-style-type: none;
-	margin: 0 0 3.3em;
-	padding: 0;
-	li {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		a, .current {
-			display: inline-block;
-			text-decoration: none;
-		}
-	}
-}
-
-.more-link {
-	display: inline-block;
-}
 
 
 
