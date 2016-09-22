@@ -1,23 +1,21 @@
 #comments {
-	margin-top: 50px;
+	margin-top: 3.3em;
 	.comments-title, #reply-title {
-	@include font-size(1.6);
+	
 	}
 	.comment-list {
 	list-style-type: none;
 	}
 	.comment {
-	margin-top: 20px;
-	padding: 25px;
+	margin-top: 1.3em;
+	padding: 1.6em;
 	}
 	.comment-author {
-		@include font-size(1.4);
-		margin-bottom: 15px;
+		margin-bottom: 1em;
 		img {
 			display: block;
 			float: left;
-			border-radius: 50%;
-			margin-right: 15px;
+			margin-right: 1em;
 		}
 		.fn {
 
@@ -38,14 +36,12 @@
 	}
 	.reply {
 		text-align: right;
-		@include font-size(1.4);
 	}
 }
 #respond {
-	margin: 50px 0;
+	margin: 3.3em 0;
 	#commentform {
 		label {
-		@include font-size(1.4);
 		display: block;
 		}
 	}
