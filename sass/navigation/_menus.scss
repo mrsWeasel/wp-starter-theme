@@ -1,12 +1,9 @@
 .nav-container {
 	position: relative;
-	text-align: right;
 	#site-navigation {
 		clear: both;
 		display: block;
-		float: left;
-		width: 100%;
-		display: inline-block;
+		float: right;
 		@media screen and (min-width: 768px) {
 			#menu-button {
 				display: none;
@@ -16,12 +13,14 @@
 			display: none;
 			list-style: none;
 			margin: 0;
-			padding-left: 0;
+			padding: 0;
+			float: right;
 
 			ul {
 				box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+				background: $color__background_menu;
 				float: left;
-				position: absolute;
+				position: absolute;			
 				top: 1.5em;
 				left: -999em;
 				z-index: 99999;
@@ -32,14 +31,12 @@
 				}
 
 				li {
+					position: relative;
+					min-width: 160px;
 					&:hover > ul,
-					&.focus > ul {
+					&:focus > ul {
 						left: 100%;
 					}
-				}
-
-				a {
-					
 				}
 
 				:hover > a,
@@ -59,16 +56,20 @@
 
 		li {
 			position: relative;
-			display: inline-block;
-			margin-right: 1em;
+			float: left;
 			&:hover > a,
 			&.focus > a {
 			}
 		}
 
+		a {
+			display: block;
+			padding: 0 0.5em;
+		}
+
 		@media screen and (min-width: 768px) {
 			ul {
-				display: inline-block;
+				display: block;
 				li {
 					display: inline-block;
 				}
@@ -117,6 +118,31 @@
 			width: 50%;
 		}
 	}	
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+ul.page-numbers {
+	list-style-type: none;
+	margin: 0 0 3.3em;
+	padding: 0;
+	li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		a, .current {
+			display: inline-block;
+			text-decoration: none;
+		}
+	}
+}
+
+.more-link {
+	display: inline-block;
+}
+
 
 /*.nav-links {
 	@extend .row;
