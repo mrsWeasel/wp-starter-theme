@@ -27,7 +27,7 @@ function sassyscores_posted_on() {
 
 	
 	
-	return $time_string; // we echo this along with other stuff in header.php
+	echo $time_string;
 
 }
 endif;
