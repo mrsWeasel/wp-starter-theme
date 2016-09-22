@@ -9,7 +9,6 @@
 
 get_header(); ?>
 
-<div class="fullwidth-block">
 	<div class="container">
 		<div class="row">
 			<div id="primary" class="content-area col-md-8">
@@ -22,7 +21,7 @@ get_header(); ?>
 
 						endwhile; // End of the loop.
 
-						the_posts_navigation();
+						sassyscores_paginate_posts();
 
 						else:
 							get_template_part( 'template-parts/content', 'none' );
@@ -36,6 +35,5 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 		</div><!-- .row -->	
 	</div><!-- .container -->
-</div><!-- .fullwidth-block -->	
 <?php
 get_footer();
