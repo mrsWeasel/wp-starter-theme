@@ -20,11 +20,10 @@
 				endif; ?>
 
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12">
 						<p><?php echo $helper_text; ?></p>
 							<?php get_search_form(); ?>
-							<div class="row">
-								<div class="col-md-12">
+			
 									<?php 
 									the_widget( 'WP_Widget_Recent_Posts' ); 
 									if ( sassyscores_categorized_blog() ) : ?>
@@ -40,8 +39,7 @@
 										) ); ?>
 									</ul>	
 									<?php endif; ?>
-								</div>
-						</div><!-- .row (nested) -->
+								
 					</div>
 				</div><!-- .row -->
 		

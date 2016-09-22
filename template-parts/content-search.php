@@ -9,7 +9,7 @@
 
 ?>
 <div class="row">
-	<div class="col-md-8 col-md-offset-2">
+	<div class="col-md-12">
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="entry-header">
 				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
