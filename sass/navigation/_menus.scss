@@ -96,16 +96,19 @@
 			overflow: hidden;
 		}
 
-		.nav-previous {
-			float: left;
-			width: 50%;
+		.nav-links {
+			@extend .row;
 		}
 
-		.nav-next {
-			float: right;
-			text-align: right;
-			width: 50%;
+		.nav-previous {
+			@extend .col-xs-6;
+		text-align: left;
 		}
+
+.nav-next {
+	@extend .col-xs-6;
+	text-align: right;
+}
 	}	
 
 .page-links {
@@ -131,18 +134,3 @@ ul.page-numbers {
 .more-link {
 	display: inline-block;
 }
-
-
-/*.nav-links {
-	@extend .row;
-}
-
-.nav-previous {
-	@extend .col-xs-6;
-	text-align: left;
-}
-
-.nav-next {
-	@extend .col-xs-6;
-	text-align: right;
-}*/
