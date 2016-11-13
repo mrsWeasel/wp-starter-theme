@@ -67,44 +67,44 @@ gulp.task('default', ['watch']);
 
 gulp.task('rootfiles', function() {
 	return gulp.src('*.+(php|png|css)')
-	.pipe(gulp.dest('./dist/tuomas'));
+	.pipe(gulp.dest('./dist'));
 });
 
 gulp.task('inc', function() {
 	return gulp.src('inc/*.php')
-	.pipe(gulp.dest('./dist/tuomas/inc'));
+	.pipe(gulp.dest('./dist/inc'));
 });
 
 gulp.task('template-parts', function() {
 	return gulp.src('template-parts/*.php')
-	.pipe(gulp.dest('./dist/tuomas/template-parts'));
+	.pipe(gulp.dest('./dist/template-parts'));
 });
 
 gulp.task('page-templates', function() {
 	return gulp.src('page-templates/*.php')
-	.pipe(gulp.dest('./dist/tuomas/template-parts'));
+	.pipe(gulp.dest('./dist/template-parts'));
 });
 
 gulp.task('js', function() {
 	return gulp.src('js/*.js')
 	//.pipe(rename('scripts.min.js'))
 	.pipe(uglify())
-	.pipe(gulp.dest('./dist/tuomas/js'));
+	.pipe(gulp.dest('./dist/js'));
 });
 
 gulp.task('css', function() {
 	return gulp.src('css/*.css')
-	.pipe(gulp.dest('./dist/tuomas/css'));
+	.pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('icons', function() {
 	return gulp.src('assets/icons/*.+(svg|php)')
-	.pipe(gulp.dest('./dist/tuomas/assets/icons'));
+	.pipe(gulp.dest('./dist/assets/icons'));
 });
 
 gulp.task('images', function() {
 	return gulp.src('assets/images/*.+(svg|png|jpeg|jpg)')
-	.pipe(gulp.dest('./dist/tuomas/assets/images'));
+	.pipe(gulp.dest('./dist/assets/images'));
 });
 
 gulp.task('build', function(callback) {
